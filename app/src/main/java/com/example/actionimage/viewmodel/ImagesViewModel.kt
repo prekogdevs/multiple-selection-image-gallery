@@ -32,4 +32,6 @@ class ImagesViewModel : ViewModel() {
                     "names: ${selectedImages.joinToString { it.title + "," }}"
         )
     }
+
+    fun selectedImagesSize() = images.count { it.isSelected }
 }
